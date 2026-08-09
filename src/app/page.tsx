@@ -8,6 +8,9 @@ import { siteConfig } from '@/config/site';
 import { DeliveryChecker } from '@/components/shared/DeliveryChecker';
 import { getWhatsAppInquiryLink } from '@/lib/whatsapp';
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 const trustItems = [
   { icon: Beef, label: 'Fresh Cut Daily', desc: '100% fresh meat processed under sanitised conditions daily' },
   { icon: ShieldCheck, label: 'Hygienically Packed', desc: 'Vacuum-sealed double layer packaging for zero leakage' },

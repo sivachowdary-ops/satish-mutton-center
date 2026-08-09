@@ -4,6 +4,9 @@ import type { Metadata } from 'next';
 import { ProductDetail } from '@/components/product/ProductDetail';
 import { ProductCard } from '@/components/product/ProductCard';
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 export async function generateMetadata(props: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
@@ -14,11 +17,6 @@ export async function generateMetadata(props: {
     title: `${product.name} — Fresh Mutton`,
     description: product.description,
   };
-}
-
-export async function generateStaticParams() {
-  const products = await getDbProducts();
-  return products.map(p => ({ slug: p.slug }));
 }
 
 export default async function ProductPage(props: {
