@@ -62,34 +62,45 @@ insert into products (id, category_id, name, slug, description, cooking_tips, im
   (
     'p5a5a5a5-5555-6666-7777-888888888888',
     'b2c3d4e5-f6g7-4h8i-9j0k-1l2m3n4o5p6q',
-    'Meaka Salthilu',
-    'meaka-salthilu',
+    'Mutton Salthilu',
+    'mutton-salthilu',
     'A traditional specialty — carefully prepared goat parts, cleaned and ready for authentic Andhra recipes.',
-    -- TODO: confirm unit (piece/kg/set) and half-quantity price with client before launch
     'Best prepared with traditional spice blends. Slow-cook for rich, deep flavours.',
-    array['/images/products/meaka-salthilu.webp'],
+    array['/images/products/mutton-salthilu.webp'],
     false,
     true
   ),
   (
     'p6a6a6a6-6666-7777-8888-999999999999',
     'b2c3d4e5-f6g7-4h8i-9j0k-1l2m3n4o5p6q',
-    'Tilli (Spleen)',
-    'tilli-spleen',
+    'Killi (Spleen)',
+    'killi-spleen',
     'Fresh goat spleen, cleaned and ready to cook. A nutritious delicacy perfect for fry and curry preparations.',
-    -- TODO: confirm unit (piece/kg/set) and half-quantity price with client before launch
     'Pan-fry with onions and spices for a quick, flavourful dish. Do not overcook — it toughens quickly.',
-    array['/images/products/tilli-spleen.webp'],
+    array['/images/products/killi.webp'],
+    false,
+    true
+  ),
+  (
+    'p7a7a7a7-7777-8888-9999-000000000000',
+    'c1a2b3c4-d5e6-4f7g-8h9i-0j1k2l3m4n5o',
+    'Mutton Keema',
+    'mutton-keema',
+    'Premium minced mutton (goat meat), finely ground for perfect texture. Ideal for making keema curry, meatballs, and kebabs.',
+    'Cook with spices and peas for a classic Keema Matar. Cook on medium heat for 15-20 minutes.',
+    array['/images/products/mutton-keema.webp'],
     false,
     true
   );
 
--- Seed Product Variants (Specialty Cuts)
+-- Seed Product Variants (Specialty & Keema Cuts)
 insert into product_variants (product_id, weight_label, price, stock_qty, is_active) values
   ('p3a3a3a3-3333-4444-5555-666666666666', 'Pack of 4', 800.00, 15, true),
   ('p4a4a4a4-4444-5555-6666-777777777777', '1 Set', 300.00, 20, true),
-  ('p5a5a5a5-5555-6666-7777-888888888888', 'TBD — confirm unit with Satish', 1000.00, 10, true),
-  ('p6a6a6a6-6666-7777-8888-999999999999', 'TBD — confirm unit with Satish', 100.00, 25, true);
+  ('p5a5a5a5-5555-6666-7777-888888888888', '1 Set', 1000.00, 10, true),
+  ('p6a6a6a6-6666-7777-8888-999999999999', '1 Set', 100.00, 25, true),
+  ('p7a7a7a7-7777-8888-9999-000000000000', '500g', 600.00, 20, true),
+  ('p7a7a7a7-7777-8888-9999-000000000000', '1kg', 1200.00, 10, true);
 
 -- Seed Testimonials
 insert into testimonials (customer_name, quote, rating, sort_order, is_active) values
