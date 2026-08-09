@@ -1,13 +1,13 @@
 -- Seed Categories
 insert into categories (id, name, slug, sort_order, is_active) values
-  ('c1a2b3c4-d5e6-4f7g-8h9i-0j1k2l3m4n5o', 'Mutton Cuts', 'mutton-cuts', 0, true),
-  ('b2c3d4e5-f6g7-4h8i-9j0k-1l2m3n4o5p6q', 'Specialty Cuts', 'specialty-cuts', 1, true);
+  ('c1a2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b5c', 'Mutton Cuts', 'mutton-cuts', 0, true),
+  ('b2c3d4e5-f6a7-4f8a-9b0c-1d2e3f4a5b6c', 'Specialty Cuts', 'specialty-cuts', 1, true);
 
 -- Seed Products (Mutton Cuts)
 insert into products (id, category_id, name, slug, description, cooking_tips, image_urls, is_featured, is_active) values
   (
-    'p1a1a1a1-1111-2222-3333-444444444444',
-    'c1a2b3c4-d5e6-4f7g-8h9i-0j1k2l3m4n5o',
+    '1a1a1a1a-1111-2222-3333-444444444444',
+    'c1a2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b5c',
     'Mutton (Curry Cut)',
     'mutton-curry-cut',
     'Perfectly sized pieces of fresh goat meat, ideal for traditional curries, biryanis, and gravies. Bone-in cuts deliver rich flavour and tender texture when slow-cooked.',
@@ -17,8 +17,8 @@ insert into products (id, category_id, name, slug, description, cooking_tips, im
     true
   ),
   (
-    'p2a2a2a2-2222-3333-4444-555555555555',
-    'c1a2b3c4-d5e6-4f7g-8h9i-0j1k2l3m4n5o',
+    '2a2a2a2a-2222-3333-4444-555555555555',
+    'c1a2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b5c',
     'Boneless Mutton',
     'boneless-mutton',
     'Premium boneless goat meat, cleaned and ready to cook. Perfect for kebabs, keema, curries, and stir-fry recipes where convenience matters.',
@@ -30,16 +30,16 @@ insert into products (id, category_id, name, slug, description, cooking_tips, im
 
 -- Seed Product Variants (Mutton Cuts)
 insert into product_variants (product_id, weight_label, price, stock_qty, is_active) values
-  ('p1a1a1a1-1111-2222-3333-444444444444', '500g', 500.00, 50, true),
-  ('p1a1a1a1-1111-2222-3333-444444444444', '1kg', 1000.00, 30, true),
-  ('p2a2a2a2-2222-3333-4444-555555555555', '500g', 600.00, 40, true),
-  ('p2a2a2a2-2222-3333-4444-555555555555', '1kg', 1200.00, 20, true);
+  ('1a1a1a1a-1111-2222-3333-444444444444', '500g', 500.00, 50, true),
+  ('1a1a1a1a-1111-2222-3333-444444444444', '1kg', 1000.00, 30, true),
+  ('2a2a2a2a-2222-3333-4444-555555555555', '500g', 600.00, 40, true),
+  ('2a2a2a2a-2222-3333-4444-555555555555', '1kg', 1200.00, 20, true);
 
 -- Seed Products (Specialty Cuts)
 insert into products (id, category_id, name, slug, description, cooking_tips, image_urls, is_featured, is_active) values
   (
-    'p3a3a3a3-3333-4444-5555-666666666666',
-    'b2c3d4e5-f6g7-4h8i-9j0k-1l2m3n4o5p6q',
+    '3a3a3a3a-3333-4444-5555-666666666666',
+    'b2c3d4e5-f6a7-4f8a-9b0c-1d2e3f4a5b6c',
     'Kalu Thalakai (Leg & Head)',
     'kalu-thalakai',
     'Traditional pack of goat legs and head — a delicacy prized across Andhra Pradesh. Slow-cooked to perfection, it yields a gelatinous, deeply flavourful broth.',
@@ -49,8 +49,8 @@ insert into products (id, category_id, name, slug, description, cooking_tips, im
     true
   ),
   (
-    'p4a4a4a4-4444-5555-6666-777777777777',
-    'b2c3d4e5-f6g7-4h8i-9j0k-1l2m3n4o5p6q',
+    '4a4a4a4a-4444-5555-6666-777777777777',
+    'b2c3d4e5-f6a7-4f8a-9b0c-1d2e3f4a5b6c',
     'Botti Set (Cleaned Tripe Set)',
     'botti-set',
     'Thoroughly cleaned and processed tripe set, ready for cooking. A staple in Andhra-style botti curries and fry preparations.',
@@ -60,8 +60,8 @@ insert into products (id, category_id, name, slug, description, cooking_tips, im
     true
   ),
   (
-    'p5a5a5a5-5555-6666-7777-888888888888',
-    'b2c3d4e5-f6g7-4h8i-9j0k-1l2m3n4o5p6q',
+    '5a5a5a5a-5555-6666-7777-888888888888',
+    'b2c3d4e5-f6a7-4f8a-9b0c-1d2e3f4a5b6c',
     'Mutton Salthilu',
     'mutton-salthilu',
     'A traditional specialty — carefully prepared goat parts, cleaned and ready for authentic Andhra recipes.',
@@ -71,8 +71,8 @@ insert into products (id, category_id, name, slug, description, cooking_tips, im
     true
   ),
   (
-    'p6a6a6a6-6666-7777-8888-999999999999',
-    'b2c3d4e5-f6g7-4h8i-9j0k-1l2m3n4o5p6q',
+    '6a6a6a6a-6666-7777-8888-999999999999',
+    'b2c3d4e5-f6a7-4f8a-9b0c-1d2e3f4a5b6c',
     'Killi (Spleen)',
     'killi-spleen',
     'Fresh goat spleen, cleaned and ready to cook. A nutritious delicacy perfect for fry and curry preparations.',
@@ -82,8 +82,8 @@ insert into products (id, category_id, name, slug, description, cooking_tips, im
     true
   ),
   (
-    'p7a7a7a7-7777-8888-9999-000000000000',
-    'c1a2b3c4-d5e6-4f7g-8h9i-0j1k2l3m4n5o',
+    '7a7a7a7a-7777-8888-9999-000000000000',
+    'c1a2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b5c',
     'Mutton Keema',
     'mutton-keema',
     'Premium minced mutton (goat meat), finely ground for perfect texture. Ideal for making keema curry, meatballs, and kebabs.',
@@ -95,12 +95,12 @@ insert into products (id, category_id, name, slug, description, cooking_tips, im
 
 -- Seed Product Variants (Specialty & Keema Cuts)
 insert into product_variants (product_id, weight_label, price, stock_qty, is_active) values
-  ('p3a3a3a3-3333-4444-5555-666666666666', 'Pack of 4', 800.00, 15, true),
-  ('p4a4a4a4-4444-5555-6666-777777777777', '1 Set', 300.00, 20, true),
-  ('p5a5a5a5-5555-6666-7777-888888888888', '1 Set', 1000.00, 10, true),
-  ('p6a6a6a6-6666-7777-8888-999999999999', '1 Set', 100.00, 25, true),
-  ('p7a7a7a7-7777-8888-9999-000000000000', '500g', 600.00, 20, true),
-  ('p7a7a7a7-7777-8888-9999-000000000000', '1kg', 1200.00, 10, true);
+  ('3a3a3a3a-3333-4444-5555-666666666666', 'Pack of 4', 800.00, 15, true),
+  ('4a4a4a4a-4444-5555-6666-777777777777', '1 Set', 300.00, 20, true),
+  ('5a5a5a5a-5555-6666-7777-888888888888', '1 Set', 1000.00, 10, true),
+  ('6a6a6a6a-6666-7777-8888-999999999999', '1 Set', 100.00, 25, true),
+  ('7a7a7a7a-7777-8888-9999-000000000000', '500g', 600.00, 20, true),
+  ('7a7a7a7a-7777-8888-9999-000000000000', '1kg', 1200.00, 10, true);
 
 -- Seed Testimonials
 insert into testimonials (customer_name, quote, rating, sort_order, is_active) values
